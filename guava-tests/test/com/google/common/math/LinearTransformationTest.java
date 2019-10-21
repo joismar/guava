@@ -151,6 +151,11 @@ public class LinearTransformationTest extends TestCase {
     assertHorizontalLinearTransformation(transformation, y);
   }
 
+  /**
+   * Calling the slope() method on a vertical linear transformation should expect IllegalStateException.
+   * This is tested in assertVerticalLinearTransformation() Test Helper Method.
+   * For testing purposes, i forced this test to fail by modify the return value on method slope() in VerticalLinearTransformation class to a float value.
+   */
   public void testMappingWithSlope_vertical() {
     double x = 1.2;
     double y1 = 3.4;
